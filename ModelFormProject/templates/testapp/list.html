@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Student Record Dashboard</h1>
+<table border="1px">
+  <tr>
+    <td>Name</td><td>RollNo</td><td>Marks</td><td>Address</td>
+  </tr>
+  {% for s in stu%}
+  <tr>
+  <td>{{s.name}}</td><td>{{s.sid}}</td><td>{{s.marks}}</td>
+  <td>{{s.address}}</td>
+  </tr>
+{% endfor%}
+</table>
+
+  </body>
+</html>
